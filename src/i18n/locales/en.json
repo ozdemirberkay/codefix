@@ -1,0 +1,80 @@
+{
+  "app": {
+    "tagline": "Visualize static analysis results and fix issues fast."
+  },
+  "common": {
+    "language": "Language",
+    "clearAll": "Clear all",
+    "lastScan": "Last scan"
+  },
+  "severity": {
+    "all": "All",
+    "critical": "Critical",
+    "major": "Major",
+    "minor": "Minor"
+  },
+  "setup": {
+    "title": "Getting started",
+    "description": "Step 1 is all you need to list issues. Step 2 unlocks AI fix suggestions.",
+    "optionalTag": "For fix suggestions",
+    "upload": {
+      "title": "Upload the ESLint report",
+      "description": "Drop in ESLint's JSON output.",
+      "hint": "Drag & drop your JSON file or click to browse",
+      "commandHint": "Generate the report with:",
+      "command": "npx eslint . -f json -o report.json",
+      "success": "File uploaded successfully."
+    },
+    "repo": {
+      "title": "Connect the repository",
+      "description": "Needed so we can read your source files. The repository must be public.",
+      "linkLabel": "Repository link",
+      "linkPlaceholder": "https://github.com/user/repo",
+      "branchLabel": "Branch",
+      "branchPlaceholder": "main",
+      "rootLabel": "Repo root path",
+      "rootPlaceholder": "/Users/you/projects/repo",
+      "rootHint": "The absolute path on the machine where ESLint ran. We strip it from the report's file paths to get the repo-relative path.",
+      "statusReady": "Repository connected",
+      "statusMissing": "Fill all three fields to enable fix suggestions"
+    }
+  },
+  "summary": {
+    "title": "Summary",
+    "subtitle": "Issue breakdown from the uploaded report",
+    "total": "Total"
+  },
+  "issues": {
+    "title": "Issues",
+    "count_one": "Showing {{shown}} of {{count}} issue",
+    "count_other": "Showing {{shown}} of {{count}} issues",
+    "emptyFiltered": "No issues match your search.",
+    "emptyInitial": "Upload an ESLint report to see issues here.",
+    "searchLabel": "Search issues",
+    "searchPlaceholder": "Search messages or file paths",
+    "filterLabel": "Filter by severity",
+    "card": {
+      "line": "Line",
+      "confidence": "Confidence",
+      "noFix": "No automated fix suggestion yet.",
+      "requestFix": "Fetch fix suggestion",
+      "requestFixLoading": "Generating…"
+    }
+  },
+  "errors": {
+    "fileNotJson": "Please upload a .json file only.",
+    "reportParseFailed": "Unable to read JSON. Check the file format.",
+    "reportInvalidShape": "This JSON doesn't look like an ESLint report.",
+    "repoLinkRequired": "Please enter the Git repository link first.",
+    "repoBranchRequired": "Please enter the branch name first.",
+    "repoRootRequired": "Please enter the repo root path first.",
+    "repoLinkInvalid": "Invalid Git repository link.",
+    "repoPathUnresolved": "The file path could not be mapped. Check the repo root path.",
+    "repoFileNotFound": "File not found in the repository (check the branch and path).",
+    "llmApiKeyMissing": "VITE_OPENAI_API_KEY is not configured.",
+    "llmRequestFailed": "Could not fetch a fix suggestion."
+  },
+  "success": {
+    "fixGenerated": "Fix suggestion generated."
+  }
+}

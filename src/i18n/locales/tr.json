@@ -1,0 +1,79 @@
+{
+  "app": {
+    "tagline": "Statik kod analizini görselleştirin, hataları hızla düzeltin."
+  },
+  "common": {
+    "language": "Dil",
+    "clearAll": "Tümünü temizle",
+    "lastScan": "Son tarama"
+  },
+  "severity": {
+    "all": "Tümü",
+    "critical": "Kritik",
+    "major": "Önemli",
+    "minor": "Düşük"
+  },
+  "setup": {
+    "title": "Başlarken",
+    "description": "1. adım hataları listelemek için yeterlidir. 2. adım yapay zekâ çözüm önerilerini açar.",
+    "optionalTag": "Çözüm önerileri için",
+    "upload": {
+      "title": "ESLint raporunu yükleyin",
+      "description": "ESLint'in JSON çıktısını buraya bırakın.",
+      "hint": "JSON dosyasını sürükleyip bırakın ya da seçmek için tıklayın",
+      "commandHint": "Raporu şu komutla oluşturabilirsiniz:",
+      "command": "npx eslint . -f json -o rapor.json",
+      "success": "Dosya başarıyla yüklendi."
+    },
+    "repo": {
+      "title": "Repoyu bağlayın",
+      "description": "Kaynak kodun okunabilmesi için gereklidir. Repo herkese açık olmalıdır.",
+      "linkLabel": "Repo linki",
+      "linkPlaceholder": "https://github.com/kullanici/repo",
+      "branchLabel": "Branch",
+      "branchPlaceholder": "main",
+      "rootLabel": "Repo kök yolu",
+      "rootPlaceholder": "/Users/ad/projeler/repo",
+      "rootHint": "ESLint'in çalıştırıldığı makinedeki tam yol. Rapordaki dosya yollarının başından bu yol çıkarılarak repo içi yol belirlenir.",
+      "statusReady": "Repo bağlandı",
+      "statusMissing": "Çözüm önerileri için üç alanı da doldurun"
+    }
+  },
+  "summary": {
+    "title": "Özet",
+    "subtitle": "Yüklenen rapordaki hataların dağılımı",
+    "total": "Toplam"
+  },
+  "issues": {
+    "title": "Hatalar",
+    "count_other": "{{count}} hatanın {{shown}} tanesi gösteriliyor",
+    "emptyFiltered": "Aramanıza uyan hata bulunamadı.",
+    "emptyInitial": "Hataları görmek için bir ESLint raporu yükleyin.",
+    "searchLabel": "Hatalarda ara",
+    "searchPlaceholder": "Mesajlarda veya dosya yollarında arayın",
+    "filterLabel": "Önem derecesine göre filtrele",
+    "card": {
+      "line": "Satır",
+      "confidence": "Güven",
+      "noFix": "Bu hata için henüz çözüm önerisi yok.",
+      "requestFix": "Çözüm önerisi getir",
+      "requestFixLoading": "Üretiliyor…"
+    }
+  },
+  "errors": {
+    "fileNotJson": "Lütfen sadece .json uzantılı bir dosya yükleyin.",
+    "reportParseFailed": "JSON okunamadı. Dosya formatını kontrol edin.",
+    "reportInvalidShape": "Bu JSON, ESLint çıktısı gibi görünmüyor.",
+    "repoLinkRequired": "Önce Git repo linkini girin.",
+    "repoBranchRequired": "Önce branch bilgisini girin.",
+    "repoRootRequired": "Önce repo kök yolunu girin.",
+    "repoLinkInvalid": "Geçersiz Git repo linki.",
+    "repoPathUnresolved": "Dosya yolu eşleştirilemedi. Repo kök yolunu kontrol edin.",
+    "repoFileNotFound": "Dosya repoda bulunamadı (branch ve yolu kontrol edin).",
+    "llmApiKeyMissing": "VITE_OPENAI_API_KEY tanımlı değil.",
+    "llmRequestFailed": "Çözüm önerisi alınamadı."
+  },
+  "success": {
+    "fixGenerated": "Çözüm önerisi üretildi."
+  }
+}
