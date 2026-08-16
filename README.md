@@ -4,7 +4,8 @@ A React dashboard for ESLint reports. Drop in a JSON report, browse the findings
 
 Everything runs in the browser — no backend, no database. The last report, repo settings, and language are kept in `localStorage`.
 
-![CodeFix dashboard showing a report summary and issue list](docs/screenshot.png)
+<img width="879" height="488" alt="codefix" src="https://github.com/user-attachments/assets/03d7d33c-aac7-420f-86d3-3b88522a208c" />
+
 
 ## Getting started
 
