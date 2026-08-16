@@ -4,6 +4,8 @@ A React dashboard for ESLint reports. Drop in a JSON report, browse the findings
 
 Everything runs in the browser — no backend, no database. The last report, repo settings, and language are kept in `localStorage`.
 
+![CodeFix dashboard showing a report summary and issue list](docs/screenshot.png)
+
 ## Getting started
 
 ```bash
@@ -57,7 +59,3 @@ Translation keys are namespaced and looked up by path — `t("issues.card.line")
 - Only ESLint JSON reports are supported.
 - Fix suggestions require a **public** GitHub repository.
 - The API key is client-side (see the security note above).
-
-## License
-
-MIT
